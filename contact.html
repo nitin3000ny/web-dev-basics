@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>contact form</h1>
+    <hr>
+    <form action="/nitin.html">
+
+        <label for="first-name">Name:</label>
+        <input type="text" id="first-name" >
+        
+        <br>
+        
+        <label for="cust-email">Email:</label>
+        <input type="email" id="cust-email">
+        
+        <br>
+        
+        <label for="message">Your message</label>
+        <textarea id="message"></textarea>
+        
+        <br>
+        <label for="mobile">Number:</label>
+        <input type="number" id="mobile">
+        
+        <br>
+        <b>Select your service</b>
+        <hr>
+        <label for="ui">UI design</label>
+            <input type="radio" id="ui"  value="ui design" name="service"/>
+            
+          
+        
+            <label for="webdev">website development</label>
+            <input type="radio" id="webdev"  value="web development" name="service" checked />
+            
+        
+        
+            <label for="cv">open cv</label>
+            <input type="radio" id="cv"  value="open cv" name="service"/>
+            
+         
+        
+        
+        <br>
+        
+        <label for="pet-select">Choose a pet:</label>
+        
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+        
+        <hr>
+        
+            <input type="checkbox" id="scales"  checked />
+            <label for="scales">Scales</label>
+          
+            <input type="checkbox" id="horns"  />
+            <label for="horns">Horns</label>
+        
+            <hr>
+        
+            <label for="avatar">Choose a profile picture:</label>
+        
+        <input type="file" id="avatar"  accept="image/png, image/jpeg" />
+        <hr>
+        
+        <button type="reset">Reset</button>
+        <button>Submit</button>
+        <br>
+        </form>
+</body>
+</html>
