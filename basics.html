@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Page</title>
+</head>
+<body>
+    <!-- Header section with heading and nav links -->
+    <header>
+        <h1 id="main-heading">Welcome to HTML Learning</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">HTML Basics</a></li>
+                <li><a href="#section3">Forms and Tables</a></li>
+                <li><a href="#section4">Media Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Section with paragraphs, semantic tags, and ID -->
+        <section id="section1">
+            <h2>Introduction to HTML</h2>
+            <p class="intro">HTML stands for HyperText Markup Language. It's used to structure content on the web.</p>
+            <article>
+                <h3>Why Learn HTML?</h3>
+                <p>HTML is the foundation of web development. Without it, you can't build web pages.</p>
+            </article>
+        </section>
+
+        <!-- Section with lists, classes, and containers -->
+        <section id="section2" class="container">
+            <h2>HTML Basics</h2>
+            <p class="description">Here are the key HTML elements you should know:</p>
+            <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Links</li>
+                <li>Lists</li>
+            </ul>
+
+            <h3>Types of Lists</h3>
+            <ol>
+                <li>Ordered List Item 1</li>
+                <li>Ordered List Item 2</li>
+            </ol>
+        </section>
+
+        <!-- Section covering forms and tables -->
+        <section id="section3" class="container">
+            <h2>Forms and Tables</h2>
+
+            <h3>Sample Form</h3>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+
+            <h3>Sample Table</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>john@example.com</td>
+                        <td>Hello!</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>jane@example.com</td>
+                        <td>Hi!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section with media elements (video, iframe) -->
+        <section id="section4" class="container">
+            <h2>Media Elements</h2>
+
+            <h3>Embedded Video</h3>
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Embedded Iframe</h3>
+            <iframe width="400" height="300" src="https://www.example.com" title="Example Website"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 HTML Learning Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
